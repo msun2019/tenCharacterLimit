@@ -5,8 +5,11 @@ lineNumber = 0
 f = open("input.txt", "r")
 l = open("output.txt", "r+")
 input = f.readlines()
+numberOfLines = len(input)
+print(numberOfLines)
 
 
+while lineNumber < numberOfLines:
 	sentence = input[0 + lineNumber]
 	cutSentence = sentence[:10]
 	cutSentence += "\n"
